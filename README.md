@@ -2,6 +2,8 @@
 
 Comparison of Object-Oriented Design (OOD) vs Data-Oriented Design (DOD) for particle simulations, demonstrating cache performance differences.
 
+Team members: Pratik Pujari, Pimpisut Puttipongkawin
+
 ## Quick Start
 
 ```bash
