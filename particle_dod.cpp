@@ -1,17 +1,17 @@
-#include 
-#include 
-#include 
-#include 
-#include 
+#include <iostream>
+#include <vector>
+#include <chrono>
+#include <random>
+#include <cmath>
 
 using namespace std;
 
 // DOD: Separate arrays for each attribute (Structure of Arrays)
 class ParticleSystem {
 public:
-    vector x, y, z;           // positions
-    vector vx, vy, vz;        // velocities
-    vector ax, ay, az;        // accelerations
+    vector<float> x, y, z;           // positions
+    vector<float> vx, vy, vz;        // velocities
+    vector<float> ax, ay, az;        // accelerations
     int count;
     
     ParticleSystem(int n) : count(n) {
@@ -61,7 +61,7 @@ int main() {
     
     // Initialize particles
     mt19937 rng(42);
-    uniform_real_distribution dist(0.0f, 100.0f);
+    uniform_real_distribution<float> dist(0.0f, 100.0f);
     
     ParticleSystem system(NUM_PARTICLES);
     for (int i = 0; i < NUM_PARTICLES; i++) {
@@ -81,7 +81,7 @@ int main() {
     }
     
     auto end = chrono::high_resolution_clock::now();
-    auto duration = chrono::duration_cast(end - start);
+    auto duration = chrono::duration_cast<chrono::milliseconds>(end - start);
     
     cout << "Total time: " << duration.count() << " ms\n";
     cout << "Time per iteration: " << (duration.count() / (float)ITERATIONS) << " ms\n";

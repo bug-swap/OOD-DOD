@@ -1,0 +1,40 @@
+# Build directory
+build/
+
+# Compiled executables
+particle_ood
+particle_dod
+*.exe
+*.out
+*.app
+
+# Profiling results
+results/
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Debug files
+*.dSYM/
+*.su
+*.pdb
+
+# macOS specific
+.DS_Store
+._*
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*~
+
+# Backup files
+*.bak
+*~
+
+# Docker (keep Dockerfile, ignore temp files)
+.dockerignore

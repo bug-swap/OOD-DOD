@@ -1,8 +1,8 @@
-#include 
-#include 
-#include 
-#include 
-#include 
+#include <iostream>
+#include <vector>
+#include <chrono>
+#include <random>
+#include <cmath>
 
 using namespace std;
 
@@ -49,9 +49,9 @@ int main() {
     
     // Initialize particles
     mt19937 rng(42);
-    uniform_real_distribution dist(0.0f, 100.0f);
+    uniform_real_distribution<float> dist(0.0f, 100.0f);
     
-    vector particles;
+    vector<Particle> particles;
     particles.reserve(NUM_PARTICLES);
     for (int i = 0; i < NUM_PARTICLES; i++) {
         particles.emplace_back(dist(rng), dist(rng), dist(rng));
@@ -73,7 +73,7 @@ int main() {
     }
     
     auto end = chrono::high_resolution_clock::now();
-    auto duration = chrono::duration_cast(end - start);
+    auto duration = chrono::duration_cast<chrono::milliseconds>(end - start);
     
     cout << "Total time: " << duration.count() << " ms\n";
     cout << "Time per iteration: " << (duration.count() / (float)ITERATIONS) << " ms\n";
