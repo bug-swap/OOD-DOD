@@ -19,6 +19,8 @@ make cachegrind
 
 All commands run inside a Docker container with Linux profiling tools.
 
+Refer to `./sample_results` for example outputs and interpretation of the profiling runs.
+
 ## Commands
 
 ### Run Performance Comparison
