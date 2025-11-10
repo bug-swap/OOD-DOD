@@ -1,0 +1,11 @@
+DOD Implementation (Structure of Arrays)
+Particles: 100000
+Iterations: 1000
+
+Total time: 202 ms
+Time per iteration: 0.202 ms
+First particle position: (37.454, -0.669995, 95.0714)
+
+Elapsed: 0:00.20
+CPU: 99%
+Max Memory: 6460 KB

@@ -1,0 +1,30 @@
+==9== Cachegrind, a cache and branch-prediction profiler
+==9== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==9== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==9== Command: ./particle_dod
+==9== 
+--9-- Warning: Cannot auto-detect cache config, using defaults.
+--9--          Run with -v to see.
+DOD Implementation (Structure of Arrays)
+Particles: 100000
+Iterations: 1000
+
+Total time: 8111 ms
+Time per iteration: 8.111 ms
+First particle position: (37.454, -0.669993, 95.0714)
+==9== 
+==9== I   refs:      3,612,951,807
+==9== I1  misses:            2,574
+==9== LLi misses:            1,958
+==9== I1  miss rate:          0.00%
+==9== LLi miss rate:          0.00%
+==9== 
+==9== D   refs:        816,117,828  (620,307,123 rd   + 195,810,705 wr)
+==9== D1  misses:      106,214,112  ( 99,002,227 rd   +   7,211,885 wr)
+==9== LLd misses:      105,350,090  ( 98,984,656 rd   +   6,365,434 wr)
+==9== D1  miss rate:          13.0% (       16.0%     +         3.7%  )
+==9== LLd miss rate:          12.9% (       16.0%     +         3.3%  )
+==9== 
+==9== LL refs:         106,216,686  ( 99,004,801 rd   +   7,211,885 wr)
+==9== LL misses:       105,352,048  ( 98,986,614 rd   +   6,365,434 wr)
+==9== LL miss rate:            2.4% (        2.3%     +         3.3%  )
