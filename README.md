@@ -19,6 +19,8 @@ make cachegrind
 
 All commands run inside a Docker container with Linux profiling tools.
 
+**Note:** See `./sample_results/` for example outputs from previous profiling runs.
+
 ## Experiments
 
 ### Experiment 1: Particle Simulation
@@ -166,6 +168,7 @@ Compare:
 ├── particle_dod.cpp            # Particle simulation - DOD implementation
 ├── array_ood.cpp               # Array processing - OOD implementation
 ├── array_dod.cpp               # Array processing - DOD implementation
+├── sample_results/             # Example profiling outputs (reference)
 ├── results/                    # Profiling results (created after running)
 └── README.md                   # This file
 ```
@@ -199,7 +202,8 @@ Both implementations use identical algorithms with seed=42 for reproducibility.
 
 - **Paper:** See `OOAD_Project_First_Draft.pdf` for detailed analysis
 - **Source Code:** https://github.com/bug-swap/OOD-DOD
-- **Full Results:** Available in `./results/` after running profiling commands
+- **Sample Results:** Check `./sample_results/` for example profiling outputs from completed runs
+- **Your Results:** Will be saved to `./results/` after running profiling commands
 
 ## How It Works
 
@@ -218,4 +222,4 @@ This project demonstrates that:
 4. **Workload type is critical** - memory-bound applications see 6× greater speedup than compute-bound ones
 5. **Write operations are consistently optimized** - DOD's sequential writes leverage hardware buffers effectively
 
-Use profiling to determine if DOD is appropriate for your specific applicat
+Use profiling to determine if DOD is appropriate for your specific application!
