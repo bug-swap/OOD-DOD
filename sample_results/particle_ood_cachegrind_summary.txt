@@ -3,7 +3,7 @@ I1 cache:         16384 B, 64 B, 4-way associative
 D1 cache:         16384 B, 64 B, 4-way associative
 LL cache:         262144 B, 64 B, 8-way associative
 Command:          ./particle_ood
-Data file:        /results/ood.out
+Data file:        /results/particle_ood.out
 Events recorded:  Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw
 Events shown:     Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw
 Event sort order: Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw

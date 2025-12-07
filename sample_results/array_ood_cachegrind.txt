@@ -1,0 +1,31 @@
+==11== Cachegrind, a cache and branch-prediction profiler
+==11== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==11== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==11== Command: ./array_ood
+==11== 
+--11-- Warning: Cannot auto-detect cache config, using defaults.
+--11--          Run with -v to see.
+OOD Array Processing (Array of Structures)
+Elements: 1000000
+Iterations: 500
+
+Total time: 56563 ms
+Time per iteration: 113.126 ms
+First element result: 15.5171
+First element value: 0.380795
+==11== 
+==11== I   refs:      28,514,678,751
+==11== I1  misses:             2,404
+==11== LLi misses:             1,879
+==11== I1  miss rate:           0.00%
+==11== LLi miss rate:           0.00%
+==11== 
+==11== D   refs:       5,991,855,309  (4,485,646,045 rd   + 1,506,209,264 wr)
+==11== D1  misses:       375,210,189  (  343,769,770 rd   +    31,440,419 wr)
+==11== LLd misses:       375,201,612  (  343,762,266 rd   +    31,439,346 wr)
+==11== D1  miss rate:            6.3% (          7.7%     +           2.1%  )
+==11== LLd miss rate:            6.3% (          7.7%     +           2.1%  )
+==11== 
+==11== LL refs:          375,212,593  (  343,772,174 rd   +    31,440,419 wr)
+==11== LL misses:        375,203,491  (  343,764,145 rd   +    31,439,346 wr)
+==11== LL miss rate:             1.1% (          1.0%     +           2.1%  )

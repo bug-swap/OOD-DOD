@@ -2,10 +2,10 @@ OOD Implementation (Array of Structures)
 Particles: 100000
 Iterations: 1000
 
-Total time: 250 ms
-Time per iteration: 0.25 ms
+Total time: 243 ms
+Time per iteration: 0.243 ms
 First particle position: (37.454, -0.669995, 95.0714)
 
-Elapsed: 0:00.25
+Elapsed: 0:00.24
 CPU: 100%
-Max Memory: 6324 KB
+Max Memory: 6328 KB

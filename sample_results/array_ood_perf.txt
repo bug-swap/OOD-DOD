@@ -1,0 +1,12 @@
+OOD Array Processing (Array of Structures)
+Elements: 1000000
+Iterations: 500
+
+Total time: 1133 ms
+Time per iteration: 2.266 ms
+First element result: 15.5171
+First element value: 0.380795
+
+Elapsed: 0:01.13
+CPU: 99%
+Max Memory: 14652 KB

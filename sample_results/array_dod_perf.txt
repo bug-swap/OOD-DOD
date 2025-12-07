@@ -1,0 +1,12 @@
+DOD Array Processing (Structure of Arrays)
+Elements: 1000000
+Iterations: 500
+
+Total time: 1098 ms
+Time per iteration: 2.196 ms
+First element result: 15.5171
+First element value: 0.380795
+
+Elapsed: 0:01.10
+CPU: 99%
+Max Memory: 14724 KB

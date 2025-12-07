@@ -9,8 +9,8 @@ OOD Implementation (Array of Structures)
 Particles: 100000
 Iterations: 1000
 
-Total time: 9459 ms
-Time per iteration: 9.459 ms
+Total time: 9502 ms
+Time per iteration: 9.502 ms
 First particle position: (37.454, -0.669993, 95.0714)
 ==7== 
 ==7== I   refs:      3,668,846,148
